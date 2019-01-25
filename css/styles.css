@@ -1,0 +1,434 @@
+/* Base Elements----------*/
+* {
+  box-sizing: border-box;
+}
+
+/* Main-Navigation-----------------*/
+
+body {
+  text-align:center;
+}
+
+
+h1 {
+  margin-top:auto;
+  padding-top: 20px;
+  color: #4a4a4a;
+}
+
+
+.main-nav {
+    line-height: 1.5em;
+    padding-bottom: 25px;
+    display:block;
+  }
+
+
+
+
+nav li {
+
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: bold;
+  margin:.5em;
+  padding: 1em;
+  background-color: white;
+  color: #4a4a4a;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+a:hover {
+  color: black;
+}
+
+#intro {
+  color:grey;
+  line-height:1.5em;
+  padding-bottom:2em;
+  padding-top:1em;
+}
+
+#intro p {
+  text-align:center;
+  padding-left:1em;
+  padding-right:1em;
+  font-size:1.2em;
+}
+
+header {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F8F8F8;
+  padding-bottom:5px;
+
+}
+
+
+h1 {
+  color:black;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:bolder;
+  padding-top:2em;
+  padding-bottom:2em;
+
+
+}
+
+.portfolio-name {
+  font-family: 'Open Sans', sans-serif;
+  font-size:.75em;
+}
+
+.profilepic {
+  width:70%;
+}
+
+/* main section-------------------*/
+
+
+img {
+  max-width:100%;
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  background-color:white;
+  justify-content: center;
+  text-align:center;
+  line-height: 1.7em;
+  padding:3px 10px;
+  margin-top:30px;
+  width:100%;
+}
+
+
+.marketing,
+.travel,
+.map,
+.calculator {
+  padding-bottom:3em;
+
+}
+
+.search,
+.gallery {
+  padding-bottom:3.5em;
+}
+
+.wrapping {
+  background-color:#F8F8F8;
+}
+
+
+
+/* Footer properties----------*/
+
+#contact {
+  color:black;
+  font-size:1em;
+  padding-top:25px;
+  padding-bottom:25px;
+}
+
+.contact-section {
+  padding-top: 1em;
+  padding-bottom:3em;
+  color:grey;
+  font-family: 'Open Sans', sans-serif;
+  text-align:center;
+  line-height:1.7em;
+  height:auto;
+  width:100%;
+  margin-bottom:0;
+}
+
+.contact-section p {
+  width:auto;
+  line-height:1.7em;
+  padding-left:1.5em;
+  padding-right:1.5em;
+  font-size: 1.2em;
+  text-align:center;
+
+
+}
+
+.footer {
+  font-family: 'Muli', sans-serif;
+  font-weight:bolder;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+
+}
+
+.top {
+  font-family: 'Muli', sans-serif;
+  font-weight:bolder;
+  padding-top:1em;
+  padding-bottom:1em;
+
+
+
+}
+
+.footer-name {
+  font-family: 'Muli', sans-serif;
+  font-weight:bolder;
+  padding-top:1em;
+  padding-bottom:1em;
+
+}
+
+
+.hide {
+  display:none;
+
+}
+
+
+
+/* float clearfix----------*/
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+/* Media Queries-----------------*/
+
+@media (min-width:768px) {
+
+
+.main-nav {
+  display:flex;
+  flex-direction: row;
+  flex-wrap:nowrap;
+  justify-content: center;
+}
+
+
+#intro {
+  display:inline-flex;
+  flex-direction:row;
+  color: grey;
+
+}
+
+#intro p {
+order:1;
+width:65%;
+text-align:left;
+margin-top:0;
+padding-right:2em;
+padding-left:1.5em;
+font-size:1.2em;
+line-height:1.5em;
+}
+
+.profilepic {
+width:60%;
+order:2;
+padding-left:1em;
+padding-right:1em;
+}
+
+
+.container {
+flex-direction: row;
+flex-wrap: wrap;
+align-items:stretch;
+flex-basis:50%;
+padding-bottom:2em;
+
+}
+
+
+
+nav li {
+  display:inline-block;
+  background-color:#F8F8F8;
+}
+
+h2 {
+  padding-top:2em;
+}
+
+header {
+  background-color:#F8F8F8;
+}
+
+.marketing,
+.travel,
+.gallery {
+ flex-basis:50%;
+  padding-right:.5em;
+  padding-left:1em;
+  padding-bottom:3em;
+
+}
+
+
+.search,
+.map,
+.calculator {
+  flex-basis:50%;
+  padding-left:.5em;
+  padding-right:1em;
+  padding-bottom:3em;
+
+}
+
+
+.hide {
+display:flex;
+flex-direction: row;
+padding-top:1em;
+
+}
+
+
+.footer {
+  padding-bottom:30px;
+}
+
+.footer li,
+  #top,
+  #portfolio,
+  #contact {
+    padding:1em;
+    color:black;
+  }
+
+.footer-name {
+  margin-right:auto;
+
+}
+
+.top {
+  display:none;
+}
+
+}
+
+
+
+@media (min-width:1024px) {
+
+
+.header {
+  display:flex;
+}
+
+
+h1 {
+  padding-left:1em;
+  margin-right:auto;
+  margin-top:0;
+  }
+
+.flex {
+  display:flex;
+  flex-direction: row;
+
+}
+
+
+#intro {
+  line-height: 1.5em;
+
+}
+
+#intro p {
+  text-align:left;
+  padding-left:1.5em;
+  margin-top:0;
+  line-height:1.5em;
+
+}
+
+
+.profilepic {
+  float:right;
+  padding-right:1.5em;
+  width:35%;
+
+}
+
+
+.container {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+
+
+}
+
+.marketing {
+  order:1;
+  flex-basis:33%;
+  padding: 2em .5em;
+
+
+}
+
+.search {
+  order:2;
+  flex-basis:33%;
+  padding:2em .5em;
+
+
+}
+.travel {
+order:3;
+flex-basis:33%;
+padding:2em .5em;
+
+
+}
+
+.map {
+  order:4;
+  flex-basis:33%;
+  padding:2em .5em;
+
+}
+.gallery {
+order:5;
+flex-basis:33%;
+padding:2em .5em;
+
+
+}
+
+.calculator {
+  order:6;
+  flex-basis:33%;
+  padding:2em .5em;
+}
+}
